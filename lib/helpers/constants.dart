@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_adaptive_split_screen/pages/dashboard.dart';
-import 'package:responsive_adaptive_split_screen/pages/User/user_grid.dart';
-import 'package:responsive_adaptive_split_screen/pages/User/user_list.dart';
+import 'package:responsive_split_screen/pages/dashboard.dart';
+import 'package:responsive_split_screen/pages/user/user_grid.dart';
+import 'package:responsive_split_screen/pages/user/user_list.dart';
 
 enum ResponsiveSizes {
   mobile,

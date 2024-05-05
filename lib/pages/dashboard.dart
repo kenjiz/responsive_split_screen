@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_adaptive_split_screen/models/user_model.dart';
-import 'package:responsive_adaptive_split_screen/widgets/app_bar_elevated.dart';
-import 'package:responsive_adaptive_split_screen/widgets/graph_bar.dart';
+import 'package:responsive_split_screen/models/user_model.dart';
+import 'package:responsive_split_screen/widgets/app_bar_elevated.dart';
+import 'package:responsive_split_screen/widgets/graph_bar.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({super.key});

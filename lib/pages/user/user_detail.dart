@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_adaptive_split_screen/helpers/constants.dart';
-import 'package:responsive_adaptive_split_screen/helpers/formatters.dart';
-import 'package:responsive_adaptive_split_screen/helpers/themes.dart';
-import 'package:responsive_adaptive_split_screen/models/user_model.dart';
-import 'package:responsive_adaptive_split_screen/state/app_state.dart';
-import 'package:responsive_adaptive_split_screen/widgets/app_bar_elevated.dart';
+import 'package:responsive_split_screen/helpers/constants.dart';
+import 'package:responsive_split_screen/helpers/formatters.dart';
+import 'package:responsive_split_screen/helpers/themes.dart';
+import 'package:responsive_split_screen/models/user_model.dart';
+import 'package:responsive_split_screen/state/app_state.dart';
+import 'package:responsive_split_screen/widgets/app_bar_elevated.dart';
 
 class UserDetail extends StatefulWidget {
   const UserDetail({super.key});
@@ -47,9 +47,7 @@ class _UserDetailState extends State<UserDetail> {
                       Icons.person,
                       size: Sizes.iconLarge,
                       color: ThemeColors.grey,
-                      shadows: [
-                        Shadow(color: ThemeColors.grey, blurRadius: 12.0)
-                      ],
+                      shadows: [Shadow(color: ThemeColors.grey, blurRadius: 12.0)],
                     ),
                   )
                 : Center(
@@ -83,12 +81,8 @@ class _UserDetailState extends State<UserDetail> {
                               '${userSelected.name.title} '
                               '${userSelected.name.first} '
                               '${userSelected.name.last}',
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .headlineLarge
-                                  ?.copyWith(
-                                    color: _appState.colorsList[
-                                        _appState.selectedUserIndex],
+                              style: Theme.of(context).textTheme.headlineLarge?.copyWith(
+                                    color: _appState.colorsList[_appState.selectedUserIndex],
                                   ),
                             ),
                             Text(

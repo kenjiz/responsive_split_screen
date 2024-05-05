@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_adaptive_split_screen/helpers/themes.dart';
+import 'package:responsive_split_screen/helpers/themes.dart';
 
 class TitleGradientBar extends StatelessWidget {
   const TitleGradientBar({

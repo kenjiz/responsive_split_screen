@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_adaptive_split_screen/helpers/themes.dart';
-import 'package:responsive_adaptive_split_screen/models/user_model.dart';
-import 'package:responsive_adaptive_split_screen/state/app_state.dart';
+import 'package:responsive_split_screen/helpers/themes.dart';
+import 'package:responsive_split_screen/models/user_model.dart';
+import 'package:responsive_split_screen/state/app_state.dart';
 
 class AppStateNotifier extends StatefulWidget {
   const AppStateNotifier({

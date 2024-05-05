@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_adaptive_split_screen/helpers/constants.dart';
-import 'package:responsive_adaptive_split_screen/helpers/nav_transition.dart';
-import 'package:responsive_adaptive_split_screen/helpers/themes.dart';
-import 'package:responsive_adaptive_split_screen/models/user_model.dart';
-import 'package:responsive_adaptive_split_screen/pages/User/user_detail.dart';
-import 'package:responsive_adaptive_split_screen/state/app_state.dart';
-import 'package:responsive_adaptive_split_screen/widgets/app_bar_elevated.dart';
+import 'package:responsive_split_screen/helpers/constants.dart';
+import 'package:responsive_split_screen/helpers/nav_transition.dart';
+import 'package:responsive_split_screen/helpers/themes.dart';
+import 'package:responsive_split_screen/models/user_model.dart';
+import 'package:responsive_split_screen/pages/user/user_detail.dart';
+import 'package:responsive_split_screen/state/app_state.dart';
+import 'package:responsive_split_screen/widgets/app_bar_elevated.dart';
 
 /// TIP: Set [PageStorageBucket] as Global to remember scrolled position
 final PageStorageBucket pageStorageBucket = PageStorageBucket();
@@ -18,8 +18,7 @@ class UserList extends StatefulWidget {
 }
 
 class _UserListState extends State<UserList> {
-  final HeroController _heroController =
-      MaterialApp.createMaterialHeroController();
+  final HeroController _heroController = MaterialApp.createMaterialHeroController();
 
   @override
   Widget build(BuildContext context) {
@@ -42,9 +41,7 @@ class _UserListState extends State<UserList> {
             },
           ),
         ),
-      ResponsiveSizes.tablet ||
-      ResponsiveSizes.desktopWeb =>
-        const BuildListViewSeparated(),
+      ResponsiveSizes.tablet || ResponsiveSizes.desktopWeb => const BuildListViewSeparated(),
     };
   }
 }
@@ -134,8 +131,7 @@ class _BuildListViewSeparatedState extends State<BuildListViewSeparated> {
               },
             );
           },
-          separatorBuilder: (BuildContext context, int index) =>
-              const Divider(),
+          separatorBuilder: (BuildContext context, int index) => const Divider(),
           itemCount: _usersList.users.length,
         ),
       ),

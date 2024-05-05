@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_adaptive_split_screen/helpers/constants.dart';
+import 'package:responsive_split_screen/helpers/constants.dart';
 
 class NavRail extends StatelessWidget {
   const NavRail({
@@ -14,8 +14,7 @@ class NavRail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return NavigationRail(
-      backgroundColor:
-          Theme.of(context).colorScheme.inversePrimary.withOpacity(0.2),
+      backgroundColor: Theme.of(context).colorScheme.inversePrimary.withOpacity(0.2),
       labelType: NavigationRailLabelType.all,
       leading: Padding(
         padding: const EdgeInsets.only(bottom: 24.0),

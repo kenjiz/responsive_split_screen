@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_adaptive_split_screen/models/user_model.dart';
+import 'package:responsive_split_screen/models/user_model.dart';
 
 class AppState extends InheritedWidget {
   const AppState({
@@ -26,7 +26,6 @@ class AppState extends InheritedWidget {
 
   @override
   bool updateShouldNotify(AppState oldWidget) {
-    return selectedUserIndex != oldWidget.selectedUserIndex ||
-        selectedPageIndex != oldWidget.selectedPageIndex;
+    return selectedUserIndex != oldWidget.selectedUserIndex || selectedPageIndex != oldWidget.selectedPageIndex;
   }
 }

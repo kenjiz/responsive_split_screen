@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_adaptive_split_screen/helpers/themes.dart';
-import 'package:responsive_adaptive_split_screen/pages/home.dart';
+import 'package:responsive_split_screen/helpers/themes.dart';
+import 'package:responsive_split_screen/pages/home.dart';
 
 void main() {
   runApp(const MyApp());

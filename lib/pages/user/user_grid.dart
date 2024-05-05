@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_adaptive_split_screen/helpers/constants.dart';
-import 'package:responsive_adaptive_split_screen/helpers/themes.dart';
-import 'package:responsive_adaptive_split_screen/models/user_model.dart';
-import 'package:responsive_adaptive_split_screen/widgets/app_bar_elevated.dart';
-import 'package:responsive_adaptive_split_screen/widgets/title_gradient_bar.dart';
+import 'package:responsive_split_screen/helpers/constants.dart';
+import 'package:responsive_split_screen/helpers/themes.dart';
+import 'package:responsive_split_screen/models/user_model.dart';
+import 'package:responsive_split_screen/widgets/app_bar_elevated.dart';
+import 'package:responsive_split_screen/widgets/title_gradient_bar.dart';
 
 class UserGrid extends StatelessWidget {
   const UserGrid({super.key});
